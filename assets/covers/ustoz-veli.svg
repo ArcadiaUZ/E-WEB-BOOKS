@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900" role="img" aria-label="The Master and Margarita — Mikhail Bulgakov">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#172327"/>
+      <stop offset="1" stop-color="#090f11"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.24" r="0.6">
+      <stop offset="0" stop-color="#b19adf" stop-opacity="0.24"/>
+      <stop offset="0.55" stop-color="#7454b6" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#b19adf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="veil" x1="0" y1="0.34" x2="0" y2="0.5">
+      <stop offset="0" stop-color="#090f11" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#090f11" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#090f11" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <rect x="214.6" y="70.0" width="333.4" height="12.2" rx="1.5" fill="#b19adf" opacity="0.159"/><rect x="142.9" y="112.8" width="352.5" height="24.5" rx="1.5" fill="#ffffff" opacity="0.102"/><rect x="155.4" y="157.0" width="260.3" height="21.6" rx="1.5" fill="#ffffff" opacity="0.081"/><rect x="155.9" y="271.8" width="369.2" height="13.6" rx="1.5" fill="#ffffff" opacity="0.141"/><rect x="160.4" y="358.4" width="401.6" height="27.0" rx="1.5" fill="#ffffff" opacity="0.150"/><rect x="233.3" y="367.2" width="278.8" height="26.0" rx="1.5" fill="#b19adf" opacity="0.157"/><rect x="65.7" y="327.4" width="392.6" height="19.4" rx="1.5" fill="#ffffff" opacity="0.112"/><rect x="127.3" y="454.5" width="372.0" height="16.4" rx="1.5" fill="#ffffff" opacity="0.150"/><rect x="49.5" y="402.0" width="133.0" height="30.3" rx="1.5" fill="#ffffff" opacity="0.156"/>
+  <rect width="600" height="900" fill="url(#spot)"/>
+  <rect x="338" y="183" width="160" height="160" transform="rotate(45 418 263)" fill="none" stroke="#b19adf" stroke-width="1.6" opacity="0.5"/>
+  <rect width="600" height="900" fill="url(#edge)"/>
+  <rect y="300" width="600" height="600" fill="url(#veil)"/>
+  <rect x="28" y="28" width="544" height="844" fill="none" stroke="#b19adf" stroke-opacity="0.16"/>
+  <rect x="0" y="0" width="12" height="900" fill="#b19adf" opacity="0.22"/>
+  <rect x="58" y="776" width="64" height="1.5" fill="#b19adf" opacity="0.85"/>
+  <text x="58" y="672.7" font-family="Georgia,'Times New Roman',serif" font-size="54" letter-spacing="-1.4" fill="#f6f3ec">THE MASTER AND</text><text x="58" y="730.0" font-family="Georgia,'Times New Roman',serif" font-size="54" letter-spacing="-1.4" fill="#f6f3ec">MARGARITA</text>
+  <text x="58" y="806" font-family="Helvetica,Arial,sans-serif" font-size="20" letter-spacing="4" fill="#ffffff" opacity="0.6">MIKHAIL BULGAKOV</text>
+  <text x="552" y="806" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" letter-spacing="3" fill="#b19adf" opacity="0.55">07</text>
+</svg>

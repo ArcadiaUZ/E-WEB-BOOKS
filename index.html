@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#05070b" />
+<title>LUMEN — elektron kutubxona</title>
+<meta name="description" content="LUMEN — kino uslubidagi scroll tajribasi va to'liq ishlaydigan elektron kutubxona: qidirish, tanlash va shu sayt ichida o'qish." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+<link rel="preload" as="image" href="assets/frames/poster.jpg" fetchpriority="high" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/cinematic.css" />
+<link rel="stylesheet" href="assets/css/library.css" />
+<link rel="stylesheet" href="assets/css/reader.css" />
+</head>
+<body class="is-loading">
+
+<div id="stage" aria-hidden="true">
+  <canvas id="stage-canvas"></canvas>
+  <canvas id="stage-dust"></canvas>
+  <div class="stage-grade"></div>
+  <div class="stage-vignette"></div>
+</div>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <p class="preloader-kicker">LUMEN</p>
+    <div class="preloader-bar"><span id="preloader-fill"></span></div>
+    <p class="preloader-meta"><span id="preloader-label">Kadrlar tayyorlanmoqda</span><span id="preloader-pct">0%</span></p>
+  </div>
+</div>
+
+<a class="skip-link" href="#library">Kutubxonaga o'tish</a>
+
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#hero">
+    <span class="nav-mark" aria-hidden="true"></span>
+    <span class="nav-name">LUMEN</span>
+  </a>
+  <nav class="nav-links" aria-label="Asosiy menyu">
+    <a href="#cinematic">Sayohat</a>
+    <a href="#library">Kutubxona</a>
+    <a href="#about">Lumen haqida</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="btn btn-ghost" type="button" data-action="open-search" aria-label="Kitob qidirish">
+      <span class="i-search" aria-hidden="true"></span><span class="btn-label">Qidirish</span>
+    </button>
+    <div id="auth-slot" class="auth-slot"></div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker"><span class="rule" aria-hidden="true"></span> Elektron kutubxona · 2026</p>
+      <h1 class="hero-title">
+        <span class="line">Bilim</span>
+        <span class="line"> chegarasiz</span>
+      </h1>
+      <p class="hero-sub">Bir sahifadan chiqib, cheksiz bilim olamiga kiring. Qidirish, tanlash va o'qish — barchasi shu sayt ichida.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#library">Kutubxonaga kiring</a>
+        <a class="btn btn-line" href="#cinematic">Sayohatni ko'ring</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong id="stat-books">0</strong><span>kitob</span></div>
+        <div><strong id="stat-pages">0</strong><span>sahifa</span></div>
+        <div><strong id="stat-cats">0</strong><span>kategoriya</span></div>
+      </div>
+    </div>
+    <div class="hero-hint" aria-hidden="true">
+      <span class="hero-hint-text">pastga aylantiring</span>
+      <span class="hero-hint-line"><i></i></span>
+    </div>
+  </section>
+
+  <section class="cinematic" id="cinematic" data-count="119">
+    <div class="cinematic-sticky">
+
+      <div class="choreo" id="choreo">
+        <article class="beat" data-from="0.00" data-to="0.20">
+          <p class="beat-index">01 — KIRISH</p>
+          <h2 class="beat-title">Deyarli kech</h2>
+          <p class="beat-text">Jigarrang shkaflar, cho'zilgan koridor. Hamma narsa birinchi sahifadan boshlanadi.</p>
+        </article>
+        <article class="beat" data-from="0.18" data-to="0.40">
+          <p class="beat-index">02 — KATALOG</p>
+          <h2 class="beat-title">Bilim tartibga solingandi</h2>
+          <p class="beat-text">Har bir kitob — bitta ko'rinish: muallif, yil, kategoriya, til.</p>
+        </article>
+        <article class="beat" data-from="0.38" data-to="0.60">
+          <p class="beat-index">03 — QIDIRUV</p>
+          <h2 class="beat-title">Istalgan sahifani toping</h2>
+          <p class="beat-text">Ism, muallif yoki mavzu bo'yicha qidiring. Natijalar darhol qayta tartiblanadi.</p>
+        </article>
+        <article class="beat" data-from="0.58" data-to="0.80">
+          <p class="beat-index">04 — O'QISH</p>
+          <h2 class="beat-title">Ruhan shu yerda</h2>
+          <p class="beat-text">Google hisobingiz bilan kiring va kitobni shu sayt ichida o'qing — yuklab olmasdan.</p>
+        </article>
+        <article class="beat" data-from="0.78" data-to="1.01">
+          <p class="beat-index">05 — KUTUBXONA</p>
+          <h2 class="beat-title">Endi siz ichkarisiz</h2>
+          <p class="beat-text">Kino tugadi. Qolgani — sizning tanlovingiz.</p>
+        </article>
+      </div>
+
+      <div class="cinema-hud" id="cinema-hud">
+        <div class="hud-rail"><span class="hud-fill" id="hud-fill"></span></div>
+        <div class="hud-row">
+          <span id="hud-chapter">KIRISH</span>
+          <span id="hud-frame">000 / 118</span>
+        </div>
+      </div>
+
+      <div class="scroll-rail" aria-hidden="true"><span id="scroll-rail-fill"></span></div>
+    </div>
+  </section>
+
+  <section class="bridge" id="bridge">
+    <div class="bridge-inner">
+      <p class="bridge-kicker">FASAD DAN ICHKARI</p>
+      <h2 class="bridge-title">Kutubxona sizga ochiq</h2>
+      <p class="bridge-text">Quyida — to'liq katalog. Tanlang, kitobni oching va o'qishni davom ettiring: o'quvchi joyi har bir kitob uchun saqlanadi.</p>
+      <div class="bridge-search">
+        <label class="search-field">
+          <span class="i-search" aria-hidden="true"></span>
+          <input id="search" type="search" placeholder="Kitob, muallif yoki mavzu…" autocomplete="off" aria-label="Kitob qidirish" />
+          <button class="search-clear" type="button" id="search-clear" aria-label="Qidiruvni tozalash" hidden>&times;</button>
+        </label>
+        <p class="search-hint" id="search-hint" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="library" id="library">
+    <div class="library-head">
+      <div class="cats" id="cats" role="tablist" aria-label="Kategoriyalar"></div>
+      <div class="library-sort">
+        <label for="sort">Tartib</label>
+        <select id="sort">
+          <option value="relevance">Tavsiya</option>
+          <option value="title">A → Z</option>
+          <option value="author">Muallif</option>
+          <option value="year">Yil</option>
+          <option value="rating">Reyting</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Hech narsa topilmadi. Boshqa so\'z bilan urinib ko\'ring.</p>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <h2>Lumen nima uchun boshqacha</h2>
+      <div class="about-grid">
+        <article><h3>Scroll — kamera</h3><p>Yuqoridagi kino bo'limi avtomatik ishlamaydi. G'ildirak — bu virtual kamerangiz: har bir aylanish sahifani oldinga yoki orqaga suradi.</p></article>
+        <article><h3>O'qish shu yerda</h3><p>Kitob tanlang — reader shu sahifada ochiladi. Sahifa, kattalik va o'quvchi joyi saqlanadi.</p></article>
+        <article><h3>Yengil arxitektura</h3><p>Kadrlar WebP formatida, atrafga yaqin kadrlar lazy-load bo'ladi va bitmap'lar chegarasiz yopiladi — xotira oshmaydi.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><span class="nav-name">LUMEN</span><p>elektron kutubxona · demo loyiha</p></div>
+    <p class="footer-note">Kadrlar: <code>video_for_interactive.mp4</code> · WebP · 12 fps</p>
+  </div>
+</footer>
+
+<div class="modal" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" hidden>
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close aria-label="Yopish">&times;</button>
+    <p class="modal-kicker">KIRISH</p>
+    <h2 id="auth-title" class="modal-title">O'qish uchun kiring</h2>
+    <p class="modal-text">Kitobni shu sayt ichida o'qish uchun Google hisobingiz bilan tizimga kiring. Hisobingiz serverga yuborilmaydi — sessiya faqat shu brauzerda saqlanadi.</p>
+    <div id="g_id_onload" class="g-signin" data-width="320" data-theme="filled_black" data-text="continue_with" data-size="large" data-shape="pill"></div>
+    <div id="google-slot" class="google-slot"></div>
+    <button class="btn btn-line btn-full" type="button" id="demo-login">Demo sifatida kiraman</button>
+    <p class="modal-note" id="auth-note"></p>
+  </div>
+</div>
+
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="reader-title" hidden>
+  <header class="reader-bar">
+    <div class="reader-meta">
+      <button class="icon-btn" type="button" id="reader-close" aria-label="Kitobni yopish">&larr;</button>
+      <div class="reader-titles">
+        <h2 id="reader-title"></h2>
+        <p id="reader-author"></p>
+      </div>
+    </div>
+    <div class="reader-tools">
+      <button class="icon-btn" type="button" id="reader-prev" aria-label="Oldingi sahifa">&minus;</button>
+      <span class="reader-count" id="reader-count"></span>
+      <button class="icon-btn" type="button" id="reader-next" aria-label="Keyingi sahifa">+</button>
+      <button class="icon-btn" type="button" id="reader-type" aria-label="Shriftni o'zgartirish">Aa</button>
+      <button class="icon-btn" type="button" id="reader-theme" aria-label="Mavzu">◐</button>
+    </div>
+    <div class="reader-progress"><span id="reader-fill"></span></div>
+  </header>
+  <div class="reader-body" id="reader-body" tabindex="0"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

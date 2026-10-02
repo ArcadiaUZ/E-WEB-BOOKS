@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900" role="img" aria-label="Dune — Frank Herbert">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#271b17"/>
+      <stop offset="1" stop-color="#110b09"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.24" r="0.6">
+      <stop offset="0" stop-color="#bedf9a" stop-opacity="0.24"/>
+      <stop offset="0.55" stop-color="#86b654" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#bedf9a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="veil" x1="0" y1="0.34" x2="0" y2="0.5">
+      <stop offset="0" stop-color="#110b09" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#110b09" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#110b09" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <rect x="298.9" y="70.0" width="215.8" height="26.1" rx="1.5" fill="#bedf9a" opacity="0.175"/><rect x="285.7" y="116.7" width="171.2" height="15.6" rx="1.5" fill="#ffffff" opacity="0.132"/><rect x="41.4" y="174.2" width="383.1" height="7.3" rx="1.5" fill="#ffffff" opacity="0.081"/><rect x="85.7" y="294.9" width="360.1" height="13.4" rx="1.5" fill="#ffffff" opacity="0.179"/><rect x="109.2" y="298.3" width="236.4" height="13.7" rx="1.5" fill="#ffffff" opacity="0.115"/><rect x="43.8" y="266.9" width="363.0" height="12.4" rx="1.5" fill="#bedf9a" opacity="0.071"/><rect x="360.2" y="456.5" width="209.3" height="19.4" rx="1.5" fill="#ffffff" opacity="0.192"/><rect x="119.6" y="609.2" width="89.5" height="26.5" rx="1.5" fill="#ffffff" opacity="0.084"/><rect x="192.6" y="677.1" width="304.4" height="29.0" rx="1.5" fill="#ffffff" opacity="0.093"/><rect x="230.0" y="682.3" width="141.5" height="16.9" rx="1.5" fill="#ffffff" opacity="0.090"/>
+  <rect width="600" height="900" fill="url(#spot)"/>
+  <circle cx="213" cy="298" r="128" fill="none" stroke="#bedf9a" stroke-width="1.6" opacity="0.5"/>
+  <rect width="600" height="900" fill="url(#edge)"/>
+  <rect y="300" width="600" height="600" fill="url(#veil)"/>
+  <rect x="28" y="28" width="544" height="844" fill="none" stroke="#bedf9a" stroke-opacity="0.16"/>
+  <rect x="0" y="0" width="12" height="900" fill="#bedf9a" opacity="0.22"/>
+  <rect x="58" y="776" width="64" height="1.5" fill="#bedf9a" opacity="0.85"/>
+  <text x="58" y="723.7" font-family="Georgia,'Times New Roman',serif" font-size="78" letter-spacing="-1.4" fill="#f6f3ec">DUNE</text>
+  <text x="58" y="806" font-family="Helvetica,Arial,sans-serif" font-size="20" letter-spacing="4" fill="#ffffff" opacity="0.6">FRANK HERBERT</text>
+  <text x="552" y="806" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" letter-spacing="3" fill="#bedf9a" opacity="0.55">05</text>
+</svg>

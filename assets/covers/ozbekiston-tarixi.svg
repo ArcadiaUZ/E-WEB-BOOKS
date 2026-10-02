@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900" role="img" aria-label="O&apos;zbekiston Tarixi — Tahrir: Sayidahmad Siddiqi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#1c2717"/>
+      <stop offset="1" stop-color="#0c1109"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.24" r="0.6">
+      <stop offset="0" stop-color="#9adf9f" stop-opacity="0.24"/>
+      <stop offset="0.55" stop-color="#54b65a" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#9adf9f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="veil" x1="0" y1="0.34" x2="0" y2="0.5">
+      <stop offset="0" stop-color="#0c1109" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#0c1109" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#0c1109" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <rect x="342.6" y="70.0" width="109.5" height="26.8" rx="1.5" fill="#9adf9f" opacity="0.118"/><rect x="103.0" y="121.6" width="348.5" height="10.9" rx="1.5" fill="#ffffff" opacity="0.119"/><rect x="128.8" y="227.7" width="434.8" height="20.5" rx="1.5" fill="#ffffff" opacity="0.196"/><rect x="194.5" y="284.2" width="241.9" height="13.7" rx="1.5" fill="#ffffff" opacity="0.190"/><rect x="85.5" y="239.6" width="411.3" height="17.8" rx="1.5" fill="#ffffff" opacity="0.061"/><rect x="308.1" y="389.8" width="144.7" height="30.4" rx="1.5" fill="#9adf9f" opacity="0.066"/><rect x="42.4" y="425.2" width="183.1" height="9.1" rx="1.5" fill="#ffffff" opacity="0.107"/><rect x="421.2" y="340.2" width="151.3" height="15.2" rx="1.5" fill="#ffffff" opacity="0.073"/>
+  <rect width="600" height="900" fill="url(#spot)"/>
+  <rect x="159" y="160" width="132" height="132" transform="rotate(45 225 226)" fill="none" stroke="#9adf9f" stroke-width="1.6" opacity="0.5"/>
+  <rect width="600" height="900" fill="url(#edge)"/>
+  <rect y="300" width="600" height="600" fill="url(#veil)"/>
+  <rect x="28" y="28" width="544" height="844" fill="none" stroke="#9adf9f" stroke-opacity="0.16"/>
+  <rect x="0" y="0" width="12" height="900" fill="#9adf9f" opacity="0.22"/>
+  <rect x="58" y="776" width="64" height="1.5" fill="#9adf9f" opacity="0.85"/>
+  <text x="58" y="656.9" font-family="Georgia,'Times New Roman',serif" font-size="66" letter-spacing="-1.4" fill="#f6f3ec">O&apos;ZBEKISTON</text><text x="58" y="726.8" font-family="Georgia,'Times New Roman',serif" font-size="66" letter-spacing="-1.4" fill="#f6f3ec">TARIXI</text>
+  <text x="58" y="806" font-family="Helvetica,Arial,sans-serif" font-size="20" letter-spacing="4" fill="#ffffff" opacity="0.6">TAHRIR: SAYIDAHMAD SIDDIQI</text>
+  <text x="552" y="806" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="18" letter-spacing="3" fill="#9adf9f" opacity="0.55">03</text>
+</svg>
